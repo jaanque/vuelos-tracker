@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Leaderboard Styles */
+#leaderboard {
+    margin-bottom: 30px;
+}
+
+#leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#leaderboard th, #leaderboard td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#leaderboard th {
+    background-color: #007bff;
+    color: white;
+}
+
+#leaderboard tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#leaderboard tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Flight Input Form Styles */
+#flight-input {
+    padding: 20px;
+    background-color: #eef;
+    border-radius: 8px;
+}
+
+#flight-form div {
+    margin-bottom: 15px;
+}
+
+#flight-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#flight-form input[type="text"],
+#flight-form input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#flight-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#flight-form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #flight-form input[type="text"],
+    #flight-form input[type="number"] {
+        width: calc(100% - 20px); /* Adjust for smaller padding */
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Retrasos de Vuelos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clasificación Mensual de Usuarios por Horas de Retraso</h1>
+
+        <section id="leaderboard">
+            <h2>Clasificación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posición</th>
+                        <th>Usuario</th>
+                        <th>Horas de Retraso</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <!-- Los datos se insertarán aquí mediante JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="flight-input">
+            <h2>Introducir Vuelo</h2>
+            <form id="flight-form">
+                <div>
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="flight-number">Número de Vuelo:</label>
+                    <input type="text" id="flight-number" name="flight-number" required>
+                </div>
+                <div>
+                    <label for="delay-hours">Horas de Retraso:</label>
+                    <input type="number" id="delay-hours" name="delay-hours" min="0" step="0.1" required>
+                </div>
+                <button type="submit">Añadir Vuelo</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
